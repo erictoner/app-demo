@@ -1,4 +1,4 @@
 replicaCount: 2
-imageTag: 0.0.7
+imageTag: 0.0.8
 containerPort: 8001
 nodePort: 30088
