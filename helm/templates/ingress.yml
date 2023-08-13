@@ -9,7 +9,7 @@ spec:
     - host: app.info
       http:
         paths:
-          - path: *
+          - path: /*
             pathType: Prefix
             backend:
               serviceName: app
