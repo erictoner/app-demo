@@ -8,8 +8,11 @@ Follow these instructions to set up and use the API locally.
 
 ### Prerequisites
 
-- Python 3.11.4
+- Docker
+- Helm
+- minikube
 - pip (Python package installer)
+- Python 3.11.4
 
 ### Installation
 
@@ -40,45 +43,31 @@ Follow these instructions to set up and use the API locally.
    - GET the current name value:
 
      ```
-     http://127.0.0.1:5000/get_name
+     http://127.0.0.1:8001/get_name
      ```
 
    - PUT to update the name value:
 
      ```
-     http://127.0.0.1:5000/update_name?name=new_name_value
+     http://127.0.0.1:8001/update_name?name=new_name_value
      ```
 
    - Check server status (returns only a 200 status code):
 
      ```
-     http://127.0.0.1:5000/status
+     http://127.0.0.1:8001/status
      ```
 
    - Access the OpenAPI documentation:
 
      ```
-     http://127.0.0.1:5000/apidocs
+     http://127.0.0.1:8001/apidocs
      ```
 
 ### Testing
 # Todo - Add steps for using ci/build_docker_image.sh
 # Todo - Add steps for using ci/test_docker_image.sh
-
-
-### Minikube Setup
-1. Use minikube docker
-   ```bash
-   eval $(minikube docker-env)
-   ```
-
-2. Build your image in minikube via ci/build_docker_image.sh
-
-Notes:
-Test access to application prior to ingress setup via
-`minikube service -n app app --url`
-
-3. 
+# Todo - Add steps for using ci/deploy_to_minikube.sh
 
 ### License
 
