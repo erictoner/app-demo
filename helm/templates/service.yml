@@ -8,6 +8,6 @@ spec:
   selector:
     app: app
   ports:
-    - name: web
-      port: {{ .Values.containerPort }}
+    - port: 80
       nodePort: {{ .Values.nodePort }}
+      targetPort: {{ .Values.containerPort }}

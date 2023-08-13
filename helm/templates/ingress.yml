@@ -12,5 +12,7 @@ spec:
           - path: /*
             pathType: Prefix
             backend:
-              serviceName: app
-              servicePort: web
+              service:
+                name: app
+                port:
+                  number: 80
