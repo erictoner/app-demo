@@ -47,7 +47,7 @@ IMAGE_NAME=${IMAGE_NAME:-$DEFAULT_IMAGE_NAME}
 
 # Get current git tag as TAG_NAME if not provided
 if [ -z "$TAG_NAME" ]; then
-    TAG_NAME=$(git describe --tags --exact-match 2>/dev/null || echo '')
+    TAG_NAME=$(git describe --tags --abbrev=0)
     if [ -z "$TAG_NAME" ]; then
         echo "No git tag found. Please provide a tag name using the -t option."
         exit 1
