@@ -8,7 +8,7 @@ Follow these instructions to set up and use the API locally.
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.11.4
 - pip (Python package installer)
 
 ### Installation
@@ -32,7 +32,7 @@ Follow these instructions to set up and use the API locally.
 
 1. Start the Flask server
    ```bash
-   python app.py
+   python api.py
    ```
 
 2. Open a web browser or use a tool like `curl` to interact with the API:
@@ -61,10 +61,25 @@ Follow these instructions to set up and use the API locally.
      http://127.0.0.1:5000/apidocs
      ```
 
-   ### Contributing
+### Testing
+# Todo - Add steps for using ci/build_docker_image.sh
+# Todo - Add steps for using ci/test_docker_image.sh
 
-   Contributions are welcome! If you find any issues or want to enhance the API, feel free to submit a pull request.
 
-   ### License
+### Minikube Setup
+1. Use minikube docker
+   ```bash
+   eval $(minikube docker-env)
+   ```
 
-   This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+2. Build your image in minikube via ci/build_docker_image.sh
+
+Notes:
+Test access to application prior to ingress setup via
+`minikube service -n app app --url`
+
+3. 
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
