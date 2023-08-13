@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flasgger import Swagger
 
 app = Flask(__name__)
@@ -58,4 +58,4 @@ def status():
     return '', 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8001, host='0.0.0.0')
