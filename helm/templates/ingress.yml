@@ -9,10 +9,8 @@ spec:
     - host: app.info
       http:
         paths:
-          - path: /*
+          - path: *
             pathType: Prefix
             backend:
-              service:
-                name: app
-                port:
-                  number: {{ .Values.containerPort }}
+              serviceName: app
+              servicePort: web
