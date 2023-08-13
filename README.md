@@ -68,6 +68,8 @@ Follow these instructions to set up and use the API locally.
 # Todo - Add steps for using ci/build_docker_image.sh
 # Todo - Add steps for using ci/test_docker_image.sh
 # Todo - Add steps for using ci/deploy_to_minikube.sh
+# Todo - Script minikube ingress setup in deploy_to_minikube.sh
+
 
 ### License
 
