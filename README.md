@@ -1,4 +1,4 @@
-# Simple Flask API with GET and PUT Endpoints
+# Demo Flask API
 
 This repository contains a simple RESTful API built using Flask. It provides two endpoints: `/get_name` to retrieve a name value and `/update_name` to update the name value. Additionally, there is a `/status` endpoint to check the server status, and a `/apidocs` endpoint that returns HTTP documentation intended for browser usage.
 
