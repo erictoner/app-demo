@@ -10,7 +10,7 @@
 # container.
 #
 # Usage:
-#   ./run_docker_container.sh [options]
+#   ./test_docker_image.sh [options]
 #
 # Options:
 #   -i, --image    Specify the Docker image name (default: app)
@@ -59,7 +59,7 @@ if [ -n "$EXISTING_CONTAINER" ]; then
   docker rm "$EXISTING_CONTAINER" &> /dev/null
 fi
 
-# Check if the container with the specified name is already running
+# Run a new container
 if [ ! "$(docker ps | grep $IMAGE_NAME)" ]; then
     echo "Starting $IMAGE_NAME:$TAG_NAME image now."
     docker run -d -p 8001:8001 --name "$IMAGE_NAME" "$IMAGE_NAME:$TAG_NAME"
