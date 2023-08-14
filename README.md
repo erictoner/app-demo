@@ -28,9 +28,9 @@ Follow these instructions to set up and use the API locally.
    ```
 
 3. Install the required packages
-  ```bash
-  pip install -r requirements.txt
-  ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 
 ### Usage
