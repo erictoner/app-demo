@@ -28,7 +28,9 @@ Follow these instructions to set up and use the API locally.
    ```
 
 3. Install the required packages
+  ```bash
   pip install -r requirements.txt
+  ```
 
 
 ### Usage
@@ -64,11 +66,11 @@ Follow these instructions to set up and use the API locally.
      http://127.0.0.1:8001/apidocs
      ```
 
-### Testing
-# Todo - Add steps for using ci/build_docker_image.sh
-# Todo - Add steps for using ci/test_docker_image.sh
-# Todo - Add steps for using ci/deploy_to_minikube.sh
-# Todo - Script minikube ingress setup in deploy_to_minikube.sh
+# Todo
+* Add steps for using ci/build_docker_image.sh
+* Add steps for using ci/test_docker_image.sh
+* Add steps for using ci/deploy_to_minikube.sh
+* Script minikube ingress setup in deploy_to_minikube.sh
 
 
 ### License
